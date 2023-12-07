@@ -1,4 +1,3 @@
-```markdown
 # Car Value Estimator
 
 ## Description
@@ -8,13 +7,29 @@ This project is a backend service built with [NestJS](https://nestjs.com/), a pr
 ## Installation
 
 **Prerequisites:**
+
 - Node.js
 - npm
 
 **Steps:**
-1. Clone the repository: `git clone https://github.com/riyoneri/car-values--nestjs.git`
-2. Navigate to the project directory: `cd car-values--nestjs`
-3. Install dependencies: `npm install`
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/riyoneri/car-values--nestjs.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd car-values--nestjs
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
 
 ## Running the app
 
