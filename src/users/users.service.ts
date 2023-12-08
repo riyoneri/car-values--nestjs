@@ -24,8 +24,4 @@ export class UsersService {
   find(email: string) {
     return this.repo.find({ where: { email } });
   }
-
-  update() {}
-
-  remove() {}
 }
