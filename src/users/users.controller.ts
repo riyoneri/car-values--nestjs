@@ -6,6 +6,6 @@ export class UsersController {
   @Post('signup')
   createUser(@Body() body: CreateUserDto) {
     console.log(body);
-    return 'mafakaa';
+    return 'Hellow world';
   }
 }
