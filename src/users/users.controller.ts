@@ -33,7 +33,7 @@ export class UsersController {
   }
 
   @Patch('/:id')
-  updateUser(@Query('id') id: number, @Body() body: CreateUserDto) {
+  updateUser(@Query('id') id: number, @Body() body: UpdateUserDto) {
     return this.usersService.update(id, body);
   }
 
