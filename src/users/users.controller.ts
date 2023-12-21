@@ -11,6 +11,8 @@ import {
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { UsersService } from './users.service';
+import { UserDto } from './dtos/user.dto';
+import { Serialize } from 'src/interceptors/serialize.interceptor';
 
 @Controller('auth')
 export class UsersController {
@@ -22,6 +24,7 @@ export class UsersController {
     return 'Hellow world';
   }
 
+  @Serialize(UserDto)
   @Get('/:id')
   findUser(@Param('id') id: number) {
     return this.usersService.findOne(id);
