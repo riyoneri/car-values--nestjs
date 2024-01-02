@@ -26,7 +26,7 @@ export class UsersController {
 
   @Post('signup')
   async createUser(@Body() body: CreateUserDto) {
-    return await this.authService.signin(body.email, body.password);
+    return await this.authService.signup(body.email, body.password);
   }
 
   @Get('/:id')
