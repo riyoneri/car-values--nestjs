@@ -39,6 +39,11 @@ export class UsersController {
     return user;
   }
 
+  @Get('whoAmI')
+  async whoAmI(@Session() session: any) {
+    return this.usersService.findOne(session.userId);
+  }
+
   @Get('/:id')
   async findUser(@Param('id') id: number) {
     const user = await this.usersService.findOne(id);
