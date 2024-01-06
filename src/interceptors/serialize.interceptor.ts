@@ -13,7 +13,7 @@ export const Serialize = (dto: any) =>
 export class SerializeInterceptor implements NestInterceptor {
   constructor(private dto: any) {}
 
-  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+  intercept(_: ExecutionContext, next: CallHandler): Observable<any> {
     return next
       .handle()
       .pipe(
